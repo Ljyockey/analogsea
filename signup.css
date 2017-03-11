@@ -44,6 +44,10 @@ input {
 	padding: 15px;
 }
 
+input:invalid {
+	border: 2px solid red;
+}
+
 input, button {
 	font-size: 1em;
 }
@@ -52,20 +56,27 @@ button {
 	height: 55px;
 	width: 320px;
 	color: white;
+	transition: background-color 0.5s ease;
 	background-color: #11cd72;
 	font-weight: bold;
 }
 
 button:hover {
-	background-color: darkgreen;
+	background-color: green;
 }
 
 .forgot a {
 	margin-top: 10px;
+	font-size: 0.75em;
+	border-bottom: 1px solid #5e5b57;
+}
+
+.forgot a, .forgot a:hover {
+	text-decoration: none;
 }
 
 .forgot a:hover {
-	text-decoration: none;
+	border: none;
 }
 
 .login {
